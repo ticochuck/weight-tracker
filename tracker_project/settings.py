@@ -129,7 +129,7 @@ USE_TZ = True
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'albums/static',
+    BASE_DIR / 'weights/static',
 ]
 
 STATIC_ROOT = "staticfiles"
