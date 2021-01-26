@@ -12,18 +12,18 @@
     
     <ul>
         <li>Weight<br>
-            <span>{{ weight.weight }}</span>
+            <span>{{ weights.weight }}</span>
         </li>
         <li>User<br>
-            <span>{{ weight.user }}</span>
+            <span>{{ weights.user }}</span>
         </li>
 
         <li>Description<br>
-            <span>{{ weight.info }}</span>
+            <span>{{ weights.addinfo }}</span>
         </li>
     </ul>
 
-    <p><a href="{% url 'update' weight.id %}">Update this record</a></p>
-    <p><a href="{% url 'delete' weight.id %}">Delete this record</a></p>
+    <p><a href="{% url 'update' weights.id %}">Update this record</a></p>
+    <p><a href="{% url 'delete' weights.id %}">Delete this record</a></p>
     
 {% endblock content %}

@@ -25,11 +25,11 @@ class DetailPageView(DetailView):
 
 class UpdatePageView(UpdateView):
     template_name = 'update.html'
-    model = Weights
     fields = '__all__'
+    model = Weights
 
 
-class DeletePageView(DetailView):
+class DeletePageView(DeleteView):
     template_name = 'delete.html'
     model = Weights
     success_url = reverse_lazy('home')
